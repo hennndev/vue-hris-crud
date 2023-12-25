@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .flexx {
+        @apply flex items-center
+    }
+    .flex-center {
+        @apply flex items-center justify-center
+    }
+    .flex-between {
+        @apply flex items-center justify-between
+    }
+
+    /* form */
+    .input-control {
+        @apply flex flex-col mb-4
+    }
+    .input-control label {
+        @apply font-medium mb-2 text-[#333]
+    }
+    .input-control input, select, textarea {
+        @apply border border-gray-200 text-gray-700 rounded-md
+    }
+} 
